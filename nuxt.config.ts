@@ -8,6 +8,68 @@ export default defineNuxtConfig({
 		}
 	},
 	css: ["~/assets/styles/main.scss"],
+	app: {
+		head: {
+			title: "Paynami Data Collection",
+			meta: [
+				{ charset: "utf-16" },
+				{ name: "viewport", content: "width=device-width, initial-scale=1" },
+				{ name: "description", content: "Data Collection" },
+				{ name: "format-detection", content: "telephone=no" },
+				{ property: "og:title", content: "Paynami" },
+				{
+					property: "og:description",
+					content: "Data Collection"
+				},
+				{ property: "og:url", content: "https://wito-inc.com/" },
+				{
+					property: "og:image",
+					content: "/img/cover.jpg"
+				},
+				{ name: "twitter:title", content: "Paynami" },
+				{
+					name: "twitter:description",
+					content: "Data Collection"
+				},
+				{
+					name: "twitter:image",
+					content: "/img/cover.jpg"
+				},
+				{ name: "twitter:card", content: "summary_large_image" }
+			],
+			link: [
+				{
+					rel: "me",
+					href: "https://twitter.com/ifgoma"
+				},
+				{ rel: "icon", type: "image/x-icon", href: "/img/favicons/favicon.ico" },
+				{
+					rel: "apple-touch-icon",
+					sizes: "76x76",
+					href: "/img/favicons/apple-touch-icon.png"
+				},
+				{
+					rel: "icon",
+					type: "image/png",
+					sizes: "32x32",
+					href: "/img/favicons/favicon-32x32.png"
+				},
+				{
+					rel: "icon",
+					type: "image/png",
+					sizes: "16x16",
+					href: "/img/favicons/favicon-16x16.png"
+				},
+
+				{
+					rel: "mask-icon",
+					href: "/img/favicons/safari-pinned-tab.svg",
+					color: "#5bbad5"
+				}
+			],
+			noscript: [{ children: "Javascript est desactivé" }]
+		}
+	},
 	postcss: {
 		plugins: {
 			"tailwindcss/nesting": {},
@@ -25,13 +87,13 @@ export default defineNuxtConfig({
 		["nuxt-directus", { autoImports: ["useDirectusItems", "useDirectusItems"] }]
 	],
 	directus: {
-		url: "http://45.93.139.231:8055",
+		url: "https://wito-inc.com",
 		token: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe"
 	},
 	runtimeConfig: {
 		apiSecret: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe",
 		public: {
-			apiBase: "http://45.93.139.231:8055"
+			apiBase: "https://wito-inc.com"
 		}
 	}
 });

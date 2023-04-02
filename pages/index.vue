@@ -1,5 +1,5 @@
 <template>
-  <div class="p-container relative pt-[90px] pb-[50px]">
+  <div class="p-container relative pt-[90px] pb-[100px]">
     <form
       action="data_collection"
       name="data_collection"
@@ -208,7 +208,7 @@ const _type_assurance = ref(1);
 onBeforeMount(() => {
   useGlobalStore().$state.menuTitle = "Ajouter nouveau";
   useGlobalStore().$state.isBackBtn = true;
-  useGlobalStore().$state.isMenuVisible = false;
+  useGlobalStore().$state.isMenuVisible = true;
 });
 
 const previewImage = ref();
