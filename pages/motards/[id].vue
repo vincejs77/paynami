@@ -1,7 +1,9 @@
 <template>
   <div class="">
     <div>
-      <div class="relative bg-gray-900 w-full py-[90px]">
+      <div
+        class="relative bg-gray-900 bg-gradient-to-t from-gray-700 to-gray-900 w-full py-[90px]"
+      >
         <div
           class="absolute border-white border-8 left-1/2 -bottom-8 -translate-x-1/2 rounded-full overflow-hidden"
         >
@@ -118,7 +120,7 @@
               <DisclosurePanel class="text-gray-500">
                 <div class="py-8 bg-gray-100 w-full flex justify-center items-center">
                   <qrcode-vue
-                    :value="`http://10.1.35.60:3000/motards/` + route.params.id"
+                    :value="`https://paynami.vercel.app/motards/` + route.params.id"
                     :size="300"
                     level="H"
                     foreground="#111827"

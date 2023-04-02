@@ -148,7 +148,7 @@
       <div>
         <label class="custom-field one w-full">
           <input v-model="_n_carte_d_electeur" type="mail" placeholder=" " />
-          <span class="placeholder">N° carte d’électeur</span>
+          <span class="placeholder">No carte d’électeur</span>
         </label>
       </div>
 

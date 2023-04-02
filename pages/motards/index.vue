@@ -197,7 +197,7 @@
       </ul>
       <div>
         <button
-          @click="save_motard"
+          @click="sync_motard()"
           type="button"
           class="shadow-lg overflow-hidden shadow-gray-400 mt-6 btn-primay w-full"
         >
@@ -255,6 +255,14 @@ import { useGlobalStore } from "~~/store/global";
 
 const search = ref("");
 
+const sync_motard = () => {
+  useGlobalStore().$state.isPending = true;
+  setTimeout(syncked, 10000);
+};
+
+const syncked = () => {
+  useGlobalStore().$state.isPending = false;
+};
 /*
 const motards = ref([
   {

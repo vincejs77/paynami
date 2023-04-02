@@ -42,7 +42,10 @@
       </div>
 
       <div class="pt-6">
-        <NuxtLink to="/login" class="flex justify-between items-center space-x-4">
+        <button
+          @click="logOut()"
+          class="w-full flex justify-between items-center space-x-4"
+        >
           <div class="flex justify-start items-center space-x-4">
             <span>
               <svg
@@ -80,7 +83,7 @@
               </svg>
             </span>
           </div>
-        </NuxtLink>
+        </button>
       </div>
     </div>
   </div>
@@ -88,6 +91,13 @@
 
 <script setup>
 import { useGlobalStore } from "~~/store/global";
+let logCookie = useCookie("log-store");
+const router = useRouter();
+
+const logOut = async () => {
+  logCookie.value = 0;
+  router.push("/login");
+};
 
 onBeforeMount(() => {
   useGlobalStore().$state.menuTitle = "Paramètres";

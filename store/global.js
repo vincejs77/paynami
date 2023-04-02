@@ -8,7 +8,8 @@ export const useGlobalStore = defineStore({
 			isBackBtn: false,
 			menuTitle: "",
 			isMenuVisible: true,
-			isPending: false
+			isPending: false,
+			isLoading: false
 		};
 	}
 });
