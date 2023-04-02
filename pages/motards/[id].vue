@@ -120,7 +120,7 @@
               <DisclosurePanel class="text-gray-500">
                 <div class="py-8 bg-gray-100 w-full flex justify-center items-center">
                   <qrcode-vue
-                    :value="`https://paynami.vercel.app/motards/` + route.params.id"
+                    :value="`https://paynami.vercel.app/motards/` + motard.id"
                     :size="300"
                     level="H"
                     foreground="#111827"

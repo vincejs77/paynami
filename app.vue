@@ -36,6 +36,7 @@ const topbar = "topbar";
 const main = "main";
 
 const router = useRouter();
+/*
 
 if (logCookie.value == 0) {
   router.push("/login");
@@ -44,7 +45,7 @@ if (logCookie.value == 0) {
 } else {
   router.push("/");
 }
-
+*/
 onBeforeUpdate(() => {
   console.log(useGlobalStore().$state.isAuth);
 });
@@ -52,9 +53,9 @@ onBeforeUpdate(() => {
 nuxtApp.hook("page:finish", () => {
   useGlobalStore().$state.isLoading = false;
   // console.log(useGlobalStore().$state.isLoading);
-  if (logCookie.value == 0) {
-    router.push("/login");
-  }
+  // if (logCookie.value == 0) {
+  //   router.push("/login");
+  // }
 });
 </script>
 
