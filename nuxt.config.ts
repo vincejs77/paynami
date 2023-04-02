@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 				{ property: "og:url", content: "https://wito-inc.com/" },
 				{
 					property: "og:image",
-					content: "/img/cover.jpg"
+					content: "https://paynami.vercel.app/img/cover.jpg"
 				},
 				{ name: "twitter:title", content: "Paynami" },
 				{
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:image",
-					content: "/img/cover.jpg"
+					content: "https://paynami.vercel.app/img/cover.jpg"
 				},
 				{ name: "twitter:card", content: "summary_large_image" }
 			],
