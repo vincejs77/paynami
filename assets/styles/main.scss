@@ -25,13 +25,13 @@ body {
 }
 
 input {
-    @apply rounded-full bg-gray-100 px-4 py-3 focus:border-2 focus:border-gray-800;
+    @apply rounded-xl bg-gray-100 px-4 py-3 focus:border-2 focus:border-gray-800;
     outline-style: none;
     border: 2px solid #dddddd4a;
 }
 
 .btn-primay {
-    @apply bg-gray-800 text-white px-8 py-3 rounded-full font-semibold;
+    @apply bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold;
 }
 
 .p-container {

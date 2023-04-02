@@ -7,7 +7,8 @@ export const useGlobalStore = defineStore({
 			isAuth: false,
 			isBackBtn: false,
 			menuTitle: "",
-			isMenuVisible: true
+			isMenuVisible: true,
+			isPending: false
 		};
 	}
 });

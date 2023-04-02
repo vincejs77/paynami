@@ -9,7 +9,7 @@
       <NuxtLayout :name="main"> </NuxtLayout>
     </div>
 
-    <main class="pt-52 pb-[80px]">
+    <main class="pt-0 pb-[0px]">
       <!-- <StatesEnMaintenance /> -->
       <NuxtPage />
     </main>
@@ -24,7 +24,7 @@ const topbar = "topbar";
 const main = "main";
 const router = useRouter();
 
-router.push("/motards");
+// router.push("/motards");
 
 onBeforeUpdate(() => {
   console.log(useGlobalStore().$state.isAuth);
