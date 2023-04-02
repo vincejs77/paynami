@@ -4,7 +4,10 @@ export const useGlobalStore = defineStore({
 	id: "global-store",
 	state: () => {
 		return {
-			isAuth: false
+			isAuth: false,
+			isBackBtn: false,
+			menuTitle: "",
+			isMenuVisible: true
 		};
 	}
 });

@@ -1,10 +1,10 @@
 <template>
-  <div class="login-form pb-[100px] h-screen flex justify-center items-center px-8">
+  <div class="login-form py-[100px] flex justify-center items-center px-8">
     <div class="max-w-xs mx-auto space-y-8">
-      <div>
+      <!-- <div>
         <h1 class="text-3xl font-black mb-4">Connexion</h1>
         <p class="text-lg text-gray-400">Entrez vos coordonées pour ouvrir une session</p>
-      </div>
+      </div> -->
       <div class="">
         <form action="login" class="space-y-4">
           <div>
@@ -34,7 +34,7 @@
             </label>
           </div>
           <div>
-            <label class="relative" for="">
+            <label class="relative" for="password">
               <span class="absolute top-1/2 -translate-y-1/2 left-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
                 class="w-full pl-12"
                 type="password"
                 name=""
-                id=""
+                id="password"
                 placeholder="Votre mot de passe"
               />
 
@@ -81,11 +81,20 @@
             </label>
           </div>
 
-          <button class="btn-primay w-full" type="submit">Se connecter</button>
+          <button class="btn-primay w-full" type="submit">
+            <NuxtLink to="/motards"> Se connecter </NuxtLink>
+          </button>
         </form>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useGlobalStore } from "~~/store/global";
+
+onBeforeMount(() => {
+  useGlobalStore().$state.menuTitle = "Connexion";
+  useGlobalStore().$state.isBackBtn = false;
+});
+</script>

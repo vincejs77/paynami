@@ -1,10 +1,10 @@
 <template>
   <div
-    class="z-[999] translate-y-8 main-layout fixed bottom-0 left-0 right-0 px-5 border border-t-gray-200"
+    class="z-[999] translate-y-8 main-layout fixed bottom-0 left-0 right-0 px-5 border-t border-t-gray-200"
   >
     <div class="min-w-full flex justify-between">
       <div class="w-1/3 flex justify-center">
-        <NuxtLink class="py-4 w-1/3" to="/motos">
+        <NuxtLink class="py-4 w-1/3" to="/motards">
           <img src="/img/moto.png" class="w-6 opacity-40" alt="" />
         </NuxtLink>
       </div>
