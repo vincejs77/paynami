@@ -29,15 +29,7 @@
         </label>
       </div>
       <div>
-        <input
-          hidden
-          name="capture"
-          id="capture"
-          type="file"
-          capture="user"
-          accept="image/"
-        />
-        <label for="capture">
+        <NuxtLink to="/qrcode-r">
           <button type="button" class="p-3 bg-gray-800 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +44,7 @@
               />
             </svg>
           </button>
-        </label>
+        </NuxtLink>
       </div>
     </div>
 

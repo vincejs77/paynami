@@ -454,6 +454,11 @@ useGlobalStore().$state.isPending = false;
 const sentState = ref(false);
 const errorIn = ref(false);
 
+/*
+DOCUMENTATION
+https://hackernoon.com/how-to-upload-files-with-javascript?source=rss
+*/
+
 const save_motard = async () => {
   formData.append("_image_profile", _image_profile.value);
   Object.assign(_image_profile.value, {

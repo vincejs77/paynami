@@ -2,7 +2,7 @@
   <div class="p-container relative py-[90px]">
     <div class="font-medium">
       <div class="pb-6 border-b border-b-gray-200">
-        <NuxtLink to="#_" class="flex justify-between items-center space-x-4">
+        <NuxtLink to="/sync" class="flex justify-between items-center space-x-4">
           <div class="flex justify-start items-center space-x-4">
             <span>
               <svg
