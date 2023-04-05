@@ -26,8 +26,11 @@
     <div class="p-container mt-54">
       <div class="text-center">
         <h1 class="text-xl font-bold mt-12 text-center">{{ motard.nom_complet }}</h1>
-        <p class="mt-0 text-gray-500 font-medium">
-          <span class="font-bold">Sexe :</span> {{ motard.sexe }}
+        <p
+          class="w-auto mt-4 line-clamp-1 p-1 px-8 rounded-md text-gray-300 font-medium bg-gray-700"
+        >
+          <span class="font-semibold text-gray-50"> ID : </span>
+          {{ motard.id }}
         </p>
       </div>
       <div class="mt-8">
@@ -36,6 +39,10 @@
             <label class="custom-field one w-full">
               <input disabled v-model="motard.nom_complet" type="text" placeholder=" " />
               <span class="placeholder">Nom complet (Nom - Postnom - Prénom)</span>
+            </label>
+            <label class="custom-field one w-full">
+              <input disabled v-model="motard.sexe" type="text" placeholder=" " />
+              <span class="placeholder">Sexe</span>
             </label>
             <label class="custom-field one w-full">
               <input
