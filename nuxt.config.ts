@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// PUSH
 // GitHub Token :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
 export default defineNuxtConfig({
 	ssr: false,
