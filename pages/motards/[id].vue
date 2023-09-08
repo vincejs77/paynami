@@ -33,7 +33,31 @@
           {{ motard.id }}
         </p>
       </div>
+
       <div class="mt-8">
+        <div class="border border-gray-100 rounded-xl">
+          <Disclosure>
+            <DisclosureButton
+              class="px-8 py-4 bg-gray-100 text-center w-full border-b-2 border-gray-200"
+            >
+              <span class="text-lg font-bold"> Afficher le code QR </span>
+            </DisclosureButton>
+            <div>
+              <DisclosurePanel class="text-gray-500">
+                <div class="py-8 bg-gray-100 w-full flex justify-center items-center">
+                  <qrcode-vue
+                    :value="motard.id"
+                    :size="300"
+                    level="H"
+                    foreground="#111827"
+                  />
+                </div>
+              </DisclosurePanel>
+            </div>
+          </Disclosure>
+        </div>
+      </div>
+      <div class="mt-8 pb-[90px]">
         <div class="flex justify-between">
           <div class="w-full">
             <label class="custom-field one w-full">
@@ -112,30 +136,6 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="mt-8 pb-[110px]">
-        <div class="border border-gray-100 rounded-xl">
-          <Disclosure>
-            <DisclosureButton
-              class="px-8 py-4 bg-gray-100 text-center w-full border-b-2 border-gray-200"
-            >
-              <span class="text-lg font-bold"> Afficher le code QR </span>
-            </DisclosureButton>
-            <div>
-              <DisclosurePanel class="text-gray-500">
-                <div class="py-8 bg-gray-100 w-full flex justify-center items-center">
-                  <qrcode-vue
-                    :value="motard.id"
-                    :size="300"
-                    level="H"
-                    foreground="#111827"
-                  />
-                </div>
-              </DisclosurePanel>
-            </div>
-          </Disclosure>
         </div>
       </div>
     </div>
