@@ -15,7 +15,31 @@
         </span>
 
         <span class="absolute top-[171px] left-[167px] font-bold text-sm">
-          {{ new Date(mortard_carte_rose.date_created).toDateString("fr") }}
+          {{
+            new Date(mortard_carte_rose.date_created).toLocaleDateString("fr", {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+              hour: "numeric",
+              minute: "numeric",
+            })
+          }}
+        </span>
+
+        <span class="absolute top-[213px] left-[87px] font-bold text-sm">
+          {{ mortard_carte_rose.plaque_immatriculation }}
+        </span>
+
+        <span class="absolute top-[234px] left-[112px] font-bold text-sm">
+          {{
+            new Date().toLocaleDateString("fr", {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+              hour: "numeric",
+              minute: "numeric",
+            })
+          }}
         </span>
       </div>
     </div>

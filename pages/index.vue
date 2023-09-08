@@ -361,30 +361,30 @@
 import { useGlobalStore } from "~~/store/global";
 
 const _image_profile = ref("");
-const _nom_complet = ref("Vincent Asani");
-const _sexe = ref("Masculin");
+const _nom_complet = ref("");
+const _sexe = ref("");
 const _date_de_naissance = ref(
   new Date("Jan 1, 1990 00:00:00").toISOString().slice(0, 10)
 );
-const _lieu_de_naissance = ref("Bukavu");
+const _lieu_de_naissance = ref("");
 const _etat_civil = ref("Selectionnez");
-const _nationalite = ref("Congolais");
-const _n_carte_d_electeur = ref("234563455443563");
+const _nationalite = ref("");
+const _n_carte_d_electeur = ref("");
 const _image_carte_d_electeur = ref("");
-const _email = ref("vincent.asani@pm.me");
-const _telephone = ref("+2430076655");
+const _email = ref("");
+const _telephone = ref("");
 
-const _adresse_physique = ref("AV. Muhumba - Q. Nguba - C. Ibanda");
-const _ville = ref("Bukavu");
-const _association = ref("Liango Association");
+const _adresse_physique = ref("");
+const _ville = ref("");
+const _association = ref("");
 
 const _usage_moto = ref(1);
-const _plaque_immatriculation = ref("234-434-0002");
-const _marque_moto = ref("Bugatti");
-const _modele_moto = ref("Cikudu");
-const _asbl_affiliation = ref("Lingula Affiliation");
-const _nom_propietaire = ref("Boss Zobozo");
-const _adresse_propietaire = ref("AV. Molimo, Q. Bolingo, C. Mapasi");
+const _plaque_immatriculation = ref("");
+const _marque_moto = ref("");
+const _modele_moto = ref("");
+const _asbl_affiliation = ref("");
+const _nom_propietaire = ref("");
+const _adresse_propietaire = ref("");
 
 onBeforeMount(() => {
   useGlobalStore().$state.menuTitle = "Ajouter un mortard";
