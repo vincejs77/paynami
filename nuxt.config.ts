@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 					property: "og:description",
 					content: "Data Collection"
 				},
-				{ property: "og:url", content: "https://wito-inc.com/" },
+				{ property: "og:url", content: "http://45.93.139.231:8056/" },
 				{
 					property: "og:image",
 					content: "https://paynami.vercel.app/img/cover.jpg"
@@ -88,13 +88,13 @@ export default defineNuxtConfig({
 		["nuxt-directus", { autoImports: ["useDirectusItems", "useDirectusItems"] }]
 	],
 	directus: {
-		url: "https://wito-inc.com",
+		url: "http://45.93.139.231:8056",
 		token: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe"
 	},
 	runtimeConfig: {
 		apiSecret: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe",
 		public: {
-			apiBase: "https://wito-inc.com"
+			apiBase: "http://45.93.139.231:8056"
 		}
 	}
 });
