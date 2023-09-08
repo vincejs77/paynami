@@ -1,7 +1,7 @@
 <template>
   <div class="py-[100px] h-screen flex justify-center items-center">
     <div class="relative w-full">
-      <img src="/img/bg_carte_rose.png" alt="" />
+      <img class="min-w-[400px]" src="/img/bg_carte_rose.png" alt="" />
       <div>
         <span class="absolute top-[107px] left-[140px] font-bold text-sm">
           {{ mortard_carte_rose.nom_complet }}
