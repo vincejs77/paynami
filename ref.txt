@@ -1,2 +1,1 @@
-certificate for wito-inc.com to /etc/nginx/sites-enabled/default
-certificate for www.wito-inc.com to /etc/nginx/sites-enabled/default
+...
