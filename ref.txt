@@ -1,2 +1,4 @@
 certificate for wito-inc.com to /etc/nginx/sites-enabled/default
 certificate for www.wito-inc.com to /etc/nginx/sites-enabled/default
+
+token : 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

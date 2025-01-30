@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 					property: "og:description",
 					content: "Data Collection"
 				},
-				{ property: "og:url", content: "https://paynami.wito-dev.tech/" },
+				{ property: "og:url", content: "https://paynami.witoxr.app/" },
 				{
 					property: "og:image",
 					content: "https://paynami.vercel.app/img/cover.jpg"
@@ -88,13 +88,13 @@ export default defineNuxtConfig({
 		["nuxt-directus", { autoImports: ["useDirectusItems", "useDirectusItems"] }]
 	],
 	directus: {
-		url: "https://paynami.wito-dev.tech",
+		url: "https://paynami.witoxr.app",
 		token: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe"
 	},
 	runtimeConfig: {
 		apiSecret: "yHA51mihI5JEInJ1PhWceNf2yEaEbDNe",
 		public: {
-			apiBase: "https://paynami.wito-dev.tech"
+			apiBase: "https://paynami.witoxr.app"
 		}
 	}
 });

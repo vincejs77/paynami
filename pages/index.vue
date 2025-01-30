@@ -1,5 +1,5 @@
 <template>
-  <div class="p-container relative pt-[90px] pb-[100px]">
+  <div class="p-container relative pb-[100px] pt-[90px]">
     <form
       action="data_collection"
       name="data_collection"
@@ -7,9 +7,9 @@
       method="post"
       class="space-y-0"
     >
-      <div class="flex justify-center flex-col items-center">
+      <div class="flex flex-col items-center justify-center">
         <div
-          class="relative imagePreviewWrapper flex justify-center items-center mb-4 w-32 h-32 object-cover bg-cover mx-auto rounded-full bg-gray-200"
+          class="imagePreviewWrapper relative mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-gray-200 bg-cover object-cover"
           :style="{ 'background-image': `url(${previewImage}) !important` }"
           @click="selectImage"
         >
@@ -18,7 +18,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-8 h-8 text-gray-500"
+            class="h-8 w-8 text-gray-500"
           >
             <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
             <path
@@ -36,7 +36,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-4 h-4 text-gray-400"
+              class="h-4 w-4 text-gray-400"
             >
               <path
                 d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"
@@ -66,7 +66,7 @@
       </div>
 
       <div>
-        <label class="relative custom-field one w-full">
+        <label class="custom-field one relative w-full">
           <select v-model="_sexe">
             <option value="Selectionnez" selected disabled>Selectionnez</option>
             <option value="Féminin">Féminin</option>
@@ -79,7 +79,7 @@
               viewBox="0 0 24 24"
               stroke-width="2.5"
               stroke="currentColor"
-              class="w-4 h-4"
+              class="h-4 w-4"
             >
               <path
                 stroke-linecap="round"
@@ -88,7 +88,7 @@
               />
             </svg>
           </span>
-          <span class="text-sm -top-2 absolute left-6 bg-white px-1 text-gray-500">
+          <span class="absolute -top-2 left-6 bg-white px-1 text-sm text-gray-500">
             Sexe
           </span>
         </label>
@@ -109,7 +109,7 @@
       </div>
 
       <div>
-        <label class="relative custom-field one w-full">
+        <label class="custom-field one relative w-full">
           <select v-model="_etat_civil">
             <option value="Selectionnez" selected disabled>Selectionnez</option>
             <option value="Célibataire">Célibataire</option>
@@ -123,7 +123,7 @@
               viewBox="0 0 24 24"
               stroke-width="2.5"
               stroke="currentColor"
-              class="w-4 h-4"
+              class="h-4 w-4"
             >
               <path
                 stroke-linecap="round"
@@ -132,7 +132,7 @@
               />
             </svg>
           </span>
-          <span class="text-sm -top-2 absolute left-6 bg-white px-1 text-gray-500">
+          <span class="absolute -top-2 left-6 bg-white px-1 text-sm text-gray-500">
             État-civil
           </span>
         </label>
@@ -152,9 +152,9 @@
         </label>
       </div>
 
-      <div class="pb-1 pt-4 relative flex justify-center flex-col items-center">
+      <div class="relative flex flex-col items-center justify-center pb-1 pt-4">
         <div
-          class="relative imagePreviewWrapper flex justify-center items-center mb-0 w-full h-44 object-cover bg-cover bg-center mx-auto rounded-xl bg-gray-200"
+          class="imagePreviewWrapper relative mx-auto mb-0 flex h-44 w-full items-center justify-center rounded-xl bg-gray-200 bg-cover bg-center object-cover"
           :style="{ 'background-image': `url(${previewImage_ce}) !important` }"
           @click="selectImage_ce"
         >
@@ -163,7 +163,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-8 h-8 text-gray-500"
+            class="h-8 w-8 text-gray-500"
           >
             <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
             <path
@@ -181,7 +181,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-4 h-4 text-gray-400"
+              class="h-4 w-4 text-gray-400"
             >
               <path
                 d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"
@@ -200,7 +200,7 @@
           accept="image/*"
         />
 
-        <label class="text-sm absolute top-2 bg-white px-2 left-5 text-gray-500">
+        <label class="absolute left-5 top-2 bg-white px-2 text-sm text-gray-500">
           Poto de la carte d'electeur</label
         >
       </div>
@@ -219,7 +219,7 @@
         </label>
       </div>
 
-      <div class="pt-4 pb-0 text-center">
+      <div class="pb-0 pt-4 text-center">
         <span class="text-lg font-semibold text-gray-700"> Adresse actuelle </span>
       </div>
 
@@ -244,14 +244,14 @@
         </label>
       </div>
 
-      <div class="pt-4 pb-0 text-center">
+      <div class="pb-0 pt-4 text-center">
         <span class="text-lg font-semibold text-gray-700">
           La moto et le proprietaire
         </span>
       </div>
 
       <div class="pt-2">
-        <label class="relative custom-field one w-full">
+        <label class="custom-field one relative w-full">
           <select v-model="_usage_moto">
             <option value="0" selected disabled>Selectionnez</option>
             <option value="1">Personnel</option>
@@ -264,7 +264,7 @@
               viewBox="0 0 24 24"
               stroke-width="2.5"
               stroke="currentColor"
-              class="w-4 h-4"
+              class="h-4 w-4"
             >
               <path
                 stroke-linecap="round"
@@ -273,7 +273,7 @@
               />
             </svg>
           </span>
-          <span class="text-sm -top-2 absolute left-6 bg-white px-1 text-gray-500">
+          <span class="absolute -top-2 left-6 bg-white px-1 text-sm text-gray-500">
             La moto est à usage
           </span>
         </label>
@@ -325,12 +325,12 @@
         <button
           @click="save_motard"
           type="button"
-          class="shadow-lg overflow-hidden shadow-gray-400 mt-6 btn-primay w-full"
+          class="btn-primay mt-6 w-full overflow-hidden shadow-lg shadow-gray-400"
         >
           <span v-if="!useGlobalStore().$state.isPending"> Valider et enregister </span>
-          <span v-else class="w-r flex justify-center items-center">
+          <span v-else class="w-r flex items-center justify-center">
             <svg
-              class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+              class="-ml-1 mr-3 h-5 w-5 animate-spin text-white"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
